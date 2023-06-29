@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "name": "spring.jackson.expand",
+      "type": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.jackson.expand.cache-prefix",
+      "type": "java.lang.String",
+      "description": "缓存展开key的前缀，默认Expand:",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.cache-timeout",
+      "type": "java.lang.Integer",
+      "description": "缓存通用时长，单位秒，默认300",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.dynamic-expand",
+      "type": "java.lang.Boolean",
+      "description": "是否要根据接口参数动态展开，如果代码里设置不展开，动态展开也不生效。默认false",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.dynamic-expand-parameter-name",
+      "type": "java.lang.Boolean",
+      "description": "动态展开的接口参数名，默认expand",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.dynamic-expand-common-prefix",
+      "type": "java.lang.Boolean",
+      "description": "动态展开 统一数据的Path前缀，比如前缀是 data.body. 如果配置 expand=userId, 相当于是expnad=data.body.userId, 默认无",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.expand-strategy",
+      "type": "com.github.stupdit1t.jackson.expand.domain.ExpandStrategy",
+      "description": "展开策略，默认覆盖当前字段, COPY 策略可以避免反序列化失败",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.copy-strategy-format",
+      "type": "java.lang.String",
+      "description": "展开策略为COPY时，Copy字段的格式，默认$%s",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    },
+    {
+      "name": "spring.jackson.expand.can-expand-to-not-exist-field",
+      "type": "java.lang.Boolean",
+      "description": "可以扩展到不存在的字段，默认True",
+      "sourceType": "com.github.stupdit1t.jackson.expand.config.JacksonExpandProperties"
+    }
+  ]
+}

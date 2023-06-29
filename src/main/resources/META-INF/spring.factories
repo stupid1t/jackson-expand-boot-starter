@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.stupdit1t.jackson.expand.config.JacksonExpandConfigure
